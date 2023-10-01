@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Roboto-Medium";
+  src: local("Roboto-Medium"),
+    url("../../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: local("Roboto-Light"),
+    url("../../fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: local("Roboto-Bold"),
+    url("../../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+.wrapper {
+  width: 90%;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vw;
+
+    .podval_text {
+      display: flex;
+      gap: 18em;
+      margin-top: 10em;
+      color: #000;
+      font-family: "Roboto-Medium";
+      font-size: 8px;
+      font-weight: 700;
+
+      .social_media {
+        h1 {
+          text-transform: uppercase;
+        }
+      }
+
+      .contact_phones {
+        h1 {
+          text-transform: uppercase;
+        }
+        p {
+          color: #000;
+          font-family: "Roboto-Light";
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 20px; /* 67.857% */
+        }
+      }
+      .about_us {
+        h1 {
+          text-transform: uppercase;
+        }
+        p {
+          color: #000;
+          font-family: "Roboto-Light";
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 18px; /* 114.286% */
+        }
+      }
+    }
+  }
+}

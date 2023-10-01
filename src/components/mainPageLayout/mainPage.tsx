@@ -3,6 +3,10 @@ import Head from "../header/head";
 import styles from "./mainPage.module.scss";
 import Logo from "../../icons/logo.svg";
 import Carpet from "../../icons/carpet.svg";
+import Material from "../../icons/material.svg";
+import Differences from "../../icons/differences.svg";
+import Color from "../../icons/color.svg";
+import Footer from "../footer/footer";
 
 const MainPage = () => {
   return (
@@ -34,7 +38,7 @@ const MainPage = () => {
               </div>
             </div>
             <div className={styles.right_carpet}>
-              <img src={Carpet} alt="" />
+              <img src={Carpet} alt="ковер" />
             </div>
           </div>
           <div className={styles.eva}>
@@ -42,7 +46,48 @@ const MainPage = () => {
               Что такое <code>EVA</code> коврики?
             </h1>
           </div>
+
+          <div className={styles.containers}>
+            <div className={styles.container_1}>
+              <img src={Material} alt="материал" />
+              <div className={styles.text}>
+                <h1>Материал</h1>
+                <p>
+                  Коврики EVA всесезонные и отличаются уникальной поверхностью
+                  материала с ячейками ромбовидной формы. Из-за чего вода не
+                  проливается при изъятии ковра и не плещется при езде. Коврики
+                  воду не пропускают.
+                </p>
+              </div>
+            </div>
+            <div className={styles.container_2}>
+              <img src={Differences} alt="различия" />
+              <div className={styles.text}>
+                <h1>Отличия</h1>
+                <p>
+                  Резиновые коврики загибаются и лезут на педали. EVA коврики
+                  такого не допустят! Специальные липучки держат его в одном
+                  положении. При желании, для водителя устанавливается подпятник
+                  из рельефного алюминия.
+                </p>
+              </div>
+            </div>
+            <div className={styles.container_3}>
+              <img src={Color} alt="цвет" />
+              <div className={styles.text}>
+                <h1>Расцветка</h1>
+                <p>
+                  Автомобильные коврики EVA можно заказать и в индивидуальных
+                  размерах и в разных цветах, которые комбинируется на выбор
+                  покупателя с такими же цветами окантовочной полипропиленовой
+                  ременной ленты.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+        <div className={styles.purple_line}></div>
+        <Footer />
       </div>
     </div>
   );

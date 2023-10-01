@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./mainPage.module.scss";
-import phone from "../icons/phone.svg";
-import location from "../icons/location.svg";
-import "../Roboto/Roboto-Black.ttf";
+import styles from "./head.module.scss";
+import phone from "../../icons/phone.svg";
+import location from "../../icons/location.svg";
+import instagram from "../../icons/Insta.svg";
 
-const MainPage = () => {
+const Head = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.content}>
@@ -20,8 +20,10 @@ const MainPage = () => {
               <h1>ваш город</h1>
             </div>
             <div className={styles.right_content}>
-              <img src={location} alt="" />
-              <h1>посетите нашу страницу</h1>
+              <img src={instagram} alt="" />
+              <h1>
+                посетите нашу <br /> страницу
+              </h1>
             </div>
           </div>
         </div>
@@ -30,4 +32,4 @@ const MainPage = () => {
   );
 };
 
-export default MainPage;
+export default Head;

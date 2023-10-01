@@ -1,6 +1,6 @@
 import "./App.css";
 import styles from "./App.module.scss";
-import MainPage from "./mainPageLayout/mainPage";
+import MainPage from "./components/mainPageLayout/mainPage";
 
 const App = () => {
   return (

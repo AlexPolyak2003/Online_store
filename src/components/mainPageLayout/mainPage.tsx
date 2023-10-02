@@ -7,6 +7,7 @@ import Material from "../../icons/material.svg";
 import Differences from "../../icons/differences.svg";
 import Color from "../../icons/color.svg";
 import Footer from "../footer/footer";
+import SimpleCarousel from "../slider/slider";
 
 const MainPage = () => {
   return (
@@ -86,7 +87,9 @@ const MainPage = () => {
             </div>
           </div>
         </div>
-        <div className={styles.purple_line}></div>
+        <div className={styles.purple_line}>
+          <SimpleCarousel />
+        </div>
         <Footer />
       </div>
     </div>

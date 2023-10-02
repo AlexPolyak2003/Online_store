@@ -149,6 +149,10 @@
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2),
             0 16px 20px rgba(0, 0, 0, 0.2);
 
+          img {
+            border-radius: 9px;
+          }
+
           .text {
             margin-left: 1.5em;
             h1 {
@@ -159,9 +163,6 @@
               font-family: "Roboto-Light";
               font-size: 14px;
               font-weight: 300;
-            }
-            img {
-              border-radius: 9px;
             }
           }
         }

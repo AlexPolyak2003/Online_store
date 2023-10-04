@@ -1,7 +1,17 @@
-// .block {
-//   display: flex;
-//   flex-direction: row;
-//   .slider {
-//     display: flex;
-//   }
-// }
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+    .report {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

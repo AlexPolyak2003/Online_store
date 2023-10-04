@@ -34,9 +34,8 @@ const MainPage = () => {
                 Инновационные коврики <br /> для автомобиля
               </h1>
               <p>в вашем городе</p>
-              <div className={styles.btn}>
-                <button>Заказать</button>
-              </div>
+
+              <button className={styles.btn}>Заказать</button>
             </div>
             <div className={styles.right_carpet}>
               <img src={Carpet} alt="ковер" />

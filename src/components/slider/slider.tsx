@@ -8,11 +8,15 @@ export default class Responsive extends Component {
   render() {
     const settings = {
       dots: true,
-      infinite: false,
+      infinite: true,
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 4,
       initialSlide: 0,
+      centerMode: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+
       responsive: [
         {
           breakpoint: 1024,
@@ -42,31 +46,28 @@ export default class Responsive extends Component {
     };
     return (
       <div className={styles.block}>
-        <h2> Responsive </h2>
+        {/* <h2> Responsive </h2> */}
         <Slider className={styles.slider} {...settings}>
-          <div>
-            <h3>1</h3>
+          <div className={styles.report}>
+            <h3>Отзыв 1</h3>
           </div>
-          <div>
-            <h3>2</h3>
+          <div className={styles.report}>
+            <h3>Отзыв 2</h3>
           </div>
-          <div>
-            <h3>3</h3>
+          <div className={styles.report}>
+            <h3>Отзыв 3</h3>
           </div>
-          <div>
-            <h3>4</h3>
+          <div className={styles.report}>
+            <h3>Отзыв 4</h3>
           </div>
-          <div>
-            <h3>5</h3>
+          <div className={styles.report}>
+            <h3>Отзыв 5</h3>
           </div>
-          <div>
-            <h3>6</h3>
+          <div className={styles.report}>
+            <h3>Отзыв 6</h3>
           </div>
-          <div>
-            <h3>7</h3>
-          </div>
-          <div>
-            <h3>8</h3>
+          <div className={styles.report}>
+            <h3>Отзыв 7</h3>
           </div>
         </Slider>
       </div>

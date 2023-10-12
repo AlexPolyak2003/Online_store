@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Roboto-Medium";
+  src:
+    local("Roboto-Medium"),
+    url("../../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src:
+    local("Roboto-Light"),
+    url("../../fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src:
+    local("Roboto-Bold"),
+    url("../../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -21,19 +42,23 @@
     min-height: 100%;
 
     .content {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
       position: relative;
-      margin: 20px;
+      // margin: 20px;
       width: 100%;
-      max-width: 600px;
+      height: 100%;
+      max-width: 700px;
       border-radius: 20px;
       background-color: #fff;
-      padding: 400px 20px 20px 20px;
       transform: translateY(-50px);
       transition:
         opacity 0.3s,
         transform 0.3s;
 
       .close_button {
+        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -48,6 +73,7 @@
           width: 15px;
           height: 15px;
         }
+        background-color: #fff;
       }
     }
   }

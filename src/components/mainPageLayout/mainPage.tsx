@@ -42,7 +42,28 @@ const MainPage = () => {
                 Заказать
               </button>
 
-              <Modal isOpen={isOpen} toggle={toggle}></Modal>
+              <Modal isOpen={isOpen} toggle={toggle}>
+                <div className={styles.title}>
+                  <h1>Форма заявки</h1>
+
+                  <input
+                    className={styles.name}
+                    placeholder="Ваше имя"
+                    type="text"
+                  />
+                  <input
+                    className={styles.email}
+                    placeholder="Ваш e-mail"
+                    type="text"
+                  />
+                  <textarea
+                    className={styles.message}
+                    placeholder="Ваше сообщение (марка автомобиля, цвет ковриков, номер телефона)"
+                  ></textarea>
+
+                  <button className={styles.send_btn}>ОТПРАВИТЬ</button>
+                </div>
+              </Modal>
             </div>
             <div className={styles.right_carpet}>
               <img src={Carpet} alt="ковер" />

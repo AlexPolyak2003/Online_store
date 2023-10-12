@@ -14,17 +14,20 @@ export default function Modal(props: ModalType) {
     props.toggle();
   };
 
-  const exit = (e: React.MouseEvent<HTMLDivElement>) => {
-    e.stopPropagation();
-    props.toggle();
-  };
+  // const exit = (e: React.MouseEvent<HTMLElement>) => {
+  //   e.stopPropagation();
+  //   props.toggle();
+  // };
 
   return (
     <>
       {props.isOpen && (
-        <div className={styles.modal}>
-          <div onClick={exit} className={styles.wrapper}>
-            <div className={styles.content}>
+        <div onClick={props.toggle} className={styles.modal}>
+          <div className={styles.wrapper}>
+            <div
+              onClick={(e) => e.stopPropagation()}
+              className={styles.content}
+            >
               {props.children}
               <button onClick={handleClick} className={styles.close_button}>
                 <img src={btn} alt="" />

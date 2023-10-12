@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Head from "../header/head";
 import styles from "./mainPage.module.scss";
 import Logo from "../../icons/logo.svg";
@@ -8,8 +8,12 @@ import Differences from "../../icons/differences.svg";
 import Color from "../../icons/color.svg";
 import Footer from "../footer/footer";
 import SimpleCarousel from "../slider/slider";
+import Modal from "../modalWindow/modal";
+import useModal from "../modalWindow/useModal";
 
 const MainPage = () => {
+  const { isOpen, toggle } = useModal();
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.content}>
@@ -34,8 +38,11 @@ const MainPage = () => {
                 Инновационные коврики <br /> для автомобиля
               </h1>
               <p>в вашем городе</p>
+              <button onClick={toggle} className={styles.btn}>
+                Заказать
+              </button>
 
-              <button className={styles.btn}>Заказать</button>
+              <Modal isOpen={isOpen} toggle={toggle}></Modal>
             </div>
             <div className={styles.right_carpet}>
               <img src={Carpet} alt="ковер" />

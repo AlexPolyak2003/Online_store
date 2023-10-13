@@ -4,6 +4,7 @@ import car from "../../images/car.png";
 import styles from "./slider.module.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 export default class Responsive extends Component {
   render() {
     const settings = {

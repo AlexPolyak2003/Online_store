@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Roboto-Medium";
-  src: local("Roboto-Medium"),
+  src:
+    local("Roboto-Medium"),
     url("../../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
 }
 
@@ -28,11 +29,43 @@
         display: flex;
         gap: 10em;
 
+        @media screen and (max-width: 1300px) {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-left: 25em;
+          gap: 7em;
+          width: 100%;
+        }
+
+        @media screen and (max-width: 1100px) {
+          padding-left: 20em;
+          gap: 4em;
+          width: 100%;
+        }
+
+        @media screen and (max-width: 950px) {
+          padding-left: 18em;
+          gap: 0em;
+          width: 100%;
+        }
+
+        @media screen and (max-width: 850px) {
+          padding-left: 15em;
+          gap: 0em;
+          width: 100%;
+        }
+
         .left_content {
           display: flex;
           justify-content: center;
+          width: 500px;
           gap: 1em;
           align-items: center;
+
+          @media screen and (max-width: 1300px) {
+            display: none;
+          }
 
           img {
             width: 20px;
@@ -44,7 +77,11 @@
             font-family: "Roboto-Medium";
             font-size: 15px;
             font-weight: 500;
-            line-height: 9.5px; /* 63.333% */
+            line-height: 15px; /* 63.333% */
+
+            @media screen and (max-width: 1500px) {
+              font-size: 14px;
+            }
           }
         }
 
@@ -52,6 +89,10 @@
           display: flex;
           align-items: center;
           gap: 1em;
+
+          @media screen and (max-width: 1300px) {
+            // margin-left: 25em;
+          }
           h1 {
             color: #fff;
             font-family: "Roboto-Medium";
@@ -73,6 +114,14 @@
           align-items: center;
           gap: 1em;
           margin-left: 15em;
+
+          @media screen and (max-width: 1100px) {
+            margin-left: 12em;
+          }
+
+          @media screen and (max-width: 850px) {
+            margin-left: 8em;
+          }
           h1 {
             color: #fff;
             font-family: "Roboto-Medium";

@@ -10,6 +10,9 @@ import Footer from "../footer/footer";
 import SimpleCarousel from "../slider/slider";
 import Modal from "../modalWindow/modal";
 import useModal from "../modalWindow/useModal";
+import Differences_tablet from "../../icons/differences_tablet.svg";
+import Color_tablet from "../../images/color_tablet.png";
+import Material_tablet from "../../icons/material_tablet.svg";
 
 const MainPage = () => {
   const { isOpen, toggle } = useModal();
@@ -69,7 +72,7 @@ const MainPage = () => {
               <img src={Carpet} alt="ковер" />
             </div>
           </div>
-          {/* <div className={styles.eva}>
+          <div className={styles.eva}>
             <h1>
               Что такое <code>EVA</code> коврики?
             </h1>
@@ -77,7 +80,14 @@ const MainPage = () => {
 
           <div className={styles.containers}>
             <div className={styles.container_1}>
-              <img src={Material} alt="материал" />
+              <div className={styles.material}>
+                <img src={Material} alt="материал" />
+              </div>
+
+              <div className={styles.material_tablet}>
+                <img src={Material_tablet} alt="материал" />
+              </div>
+
               <div className={styles.text}>
                 <h1>Материал</h1>
                 <p>
@@ -89,7 +99,14 @@ const MainPage = () => {
               </div>
             </div>
             <div className={styles.container_2}>
-              <img src={Differences} alt="различия" />
+              <div className={styles.differences}>
+                <img src={Differences} alt="различия" />
+              </div>
+
+              <div className={styles.differences_tablet}>
+                <img src={Differences_tablet} alt="различия" />
+              </div>
+
               <div className={styles.text}>
                 <h1>Отличия</h1>
                 <p>
@@ -101,7 +118,14 @@ const MainPage = () => {
               </div>
             </div>
             <div className={styles.container_3}>
-              <img src={Color} alt="цвет" />
+              <div className={styles.color}>
+                <img src={Color} alt="цвет" />
+              </div>
+
+              <div className={styles.color_tablet}>
+                <img src={Color_tablet} alt="цвет" />
+              </div>
+
               <div className={styles.text}>
                 <h1>Расцветка</h1>
                 <p>
@@ -112,12 +136,12 @@ const MainPage = () => {
                 </p>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
         {/* <div className={styles.purple_line}>
           <SimpleCarousel />
-        </div> */}
-        {/* <Footer /> */}
+        </div>
+        <Footer /> */}
       </div>
     </div>
   );

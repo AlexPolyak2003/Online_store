@@ -10,6 +10,9 @@ import Footer from "../footer/footer";
 import SimpleCarousel from "../slider/slider";
 import Modal from "../modalWindow/modal";
 import useModal from "../modalWindow/useModal";
+import Differences_tablet from "../../icons/differences_tablet.svg";
+import Color_tablet from "../../images/color_tablet.png";
+import Material_tablet from "../../icons/material_tablet.svg";
 
 const MainPage = () => {
   const { isOpen, toggle } = useModal();

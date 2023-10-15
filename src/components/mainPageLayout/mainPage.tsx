@@ -69,7 +69,7 @@ const MainPage = () => {
               <img src={Carpet} alt="ковер" />
             </div>
           </div>
-          {/* <div className={styles.eva}>
+          <div className={styles.eva}>
             <h1>
               Что такое <code>EVA</code> коврики?
             </h1>
@@ -77,7 +77,10 @@ const MainPage = () => {
 
           <div className={styles.containers}>
             <div className={styles.container_1}>
-              <img src={Material} alt="материал" />
+              <div className={styles.material}>
+                <img src={Material} alt="материал" />
+              </div>
+
               <div className={styles.text}>
                 <h1>Материал</h1>
                 <p>
@@ -89,7 +92,10 @@ const MainPage = () => {
               </div>
             </div>
             <div className={styles.container_2}>
-              <img src={Differences} alt="различия" />
+              <div className={styles.differences}>
+                <img src={Differences} alt="различия" />
+              </div>
+
               <div className={styles.text}>
                 <h1>Отличия</h1>
                 <p>
@@ -101,7 +107,10 @@ const MainPage = () => {
               </div>
             </div>
             <div className={styles.container_3}>
-              <img src={Color} alt="цвет" />
+              <div className={styles.color}>
+                <img src={Color} alt="цвет" />
+              </div>
+
               <div className={styles.text}>
                 <h1>Расцветка</h1>
                 <p>
@@ -112,12 +121,12 @@ const MainPage = () => {
                 </p>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
-        {/* <div className={styles.purple_line}>
+        <div className={styles.purple_line}>
           <SimpleCarousel />
-        </div> */}
-        {/* <Footer /> */}
+        </div>
+        <Footer />
       </div>
     </div>
   );

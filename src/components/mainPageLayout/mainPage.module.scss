@@ -297,8 +297,22 @@
         flex-direction: row;
         justify-content: center;
         font-family: "Roboto-Medium";
-
         gap: 4em;
+
+        @media screen and (max-width: 1200px) {
+          gap: 2em;
+        }
+
+        @media screen and (max-width: 1000px) {
+          gap: 1.5em;
+        }
+
+        @media screen and (max-width: 776px) {
+          flex-direction: column;
+          align-items: center;
+          gap: 0;
+        }
+
         .container_1,
         .container_2,
         .container_3 {
@@ -311,14 +325,65 @@
             0 4px 12px rgba(0, 0, 0, 0.2),
             0 16px 20px rgba(0, 0, 0, 0.2);
 
-          img {
-            border-radius: 9px;
+          @media screen and (max-width: 1200px) {
+            width: 300px;
+          }
+
+          @media screen and (max-width: 1000px) {
+            width: 230px;
+            height: 370px;
+          }
+
+          @media screen and (max-width: 776px) {
+            width: 350px;
+            height: 414px;
+          }
+
+          .material_tablet,
+          .differences_tablet,
+          .color_tablet {
+            display: none;
+
+            // @media screen and (max-width: 1200px) {
+            //   display: flex;
+            // }
+
+            // img {
+            //   width: 100%;
+            //   border-radius: 9px;
+            // }
+          }
+
+          .material,
+          .differences,
+          .color {
+            display: flex;
+
+            img {
+              border-radius: 9px;
+
+              @media screen and (max-width: 1200px) {
+                width: 300px;
+              }
+
+              @media screen and (max-width: 1000px) {
+                width: 230px;
+              }
+
+              @media screen and (max-width: 776px) {
+                width: 350px;
+              }
+            }
           }
 
           .text {
             margin-left: 1.5em;
             h1 {
               text-transform: uppercase;
+
+              @media screen and (max-width: 1000px) {
+                font-size: 25px;
+              }
             }
             p {
               color: #767676;

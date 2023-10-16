@@ -50,7 +50,7 @@ const MainPage = () => {
 
               <Modal isOpen={isOpen} toggle={toggle}>
                 <div className={styles.title}>
-                  <h1>Форма заявки</h1>
+                  <h3>Форма заявки</h3>
 
                   <input
                     className={styles.name}

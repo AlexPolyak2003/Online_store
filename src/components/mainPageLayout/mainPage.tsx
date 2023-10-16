@@ -40,6 +40,9 @@ const MainPage = () => {
               <h1>
                 Инновационные коврики <br /> для автомобиля
               </h1>
+              <h2>
+                Инновационные <br /> коврики для <br /> автомобиля
+              </h2>
               <p>в вашем городе</p>
               <button onClick={toggle} className={styles.btn}>
                 Заказать
@@ -72,7 +75,7 @@ const MainPage = () => {
               <img src={Carpet} alt="ковер" />
             </div>
           </div>
-          {/* <div className={styles.eva}>
+          <div className={styles.eva}>
             <h1>
               Что такое <code>EVA</code> коврики?
             </h1>
@@ -127,9 +130,9 @@ const MainPage = () => {
           </div>
         </div>
         <div className={styles.purple_line}>
-          <SimpleCarousel /> */}
+          <SimpleCarousel />
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </div>
   );

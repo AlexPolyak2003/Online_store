@@ -21,15 +21,29 @@
 
 .wrapper {
   width: 90%;
+
   .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 25vw;
 
+    @media screen and (max-width: 776px) {
+      display: flex;
+      flex-direction: row;
+    }
+
     @media screen and (max-width: 1200px) {
       display: flex;
       justify-content: center;
+    }
+
+    @media screen and (max-width: 776px) {
+      padding-top: 4em;
+    }
+
+    @media screen and (max-width: 450px) {
+      padding-top: 5em;
     }
 
     .big_icon {
@@ -43,6 +57,10 @@
         position: absolute;
         left: 5em;
       }
+
+      @media screen and (max-width: 776px) {
+        display: none;
+      }
     }
 
     .little_icon {
@@ -50,6 +68,10 @@
         transform: scale(0.8);
         position: absolute;
         right: 5em;
+      }
+
+      @media screen and (max-width: 776px) {
+        display: none;
       }
     }
 
@@ -66,6 +88,13 @@
         gap: 12em;
         display: flex;
         justify-content: center;
+      }
+
+      @media screen and (max-width: 776px) {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        text-align: center;
       }
 
       .social_media {

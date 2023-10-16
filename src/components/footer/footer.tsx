@@ -8,7 +8,11 @@ const Footer = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.content}>
-        <img src={Footer_icon} alt="футер иконка маленькая" />
+        <img
+          className={styles.little_icon}
+          src={Footer_icon}
+          alt="футер иконка маленькая"
+        />
         <div className={styles.podval_text}>
           <div className={styles.social_media}>
             <h1>Мы в социальных сетях</h1>

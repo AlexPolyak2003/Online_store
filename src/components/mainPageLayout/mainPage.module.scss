@@ -42,6 +42,11 @@
         justify-content: space-between;
         align-items: center;
 
+        @media screen and (max-width: 776px) {
+          display: flex;
+          justify-content: center;
+        }
+
         .logo {
           display: flex;
           margin-top: 2em;
@@ -121,9 +126,6 @@
             font-family: "Roboto-Light";
             font-size: 24px;
             font-weight: 300;
-
-            @media screen and (max-width: 1450px) {
-            }
           }
 
           .btn {

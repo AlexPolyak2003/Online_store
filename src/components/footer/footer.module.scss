@@ -1,18 +1,21 @@
 @font-face {
   font-family: "Roboto-Medium";
-  src: local("Roboto-Medium"),
+  src:
+    local("Roboto-Medium"),
     url("../../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Roboto-Light";
-  src: local("Roboto-Light"),
+  src:
+    local("Roboto-Light"),
     url("../../fonts/Roboto/Roboto-Light.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Roboto-Bold";
-  src: local("Roboto-Bold"),
+  src:
+    local("Roboto-Bold"),
     url("../../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
 }
 
@@ -22,7 +25,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 20vw;
+    height: 25vw;
+
+    @media screen and (max-width: 1200px) {
+      display: flex;
+      justify-content: center;
+    }
+
+    .big_icon {
+      @media screen and (max-width: 1350px) {
+        transform: scale(0.8);
+      }
+
+      @media screen and (max-width: 1200px) {
+        // display: none;
+        transform: scale(0.6);
+        position: absolute;
+        left: 5em;
+      }
+    }
+
+    .little_icon {
+      @media screen and (max-width: 1200px) {
+        transform: scale(0.8);
+        position: absolute;
+        right: 5em;
+      }
+    }
 
     .podval_text {
       display: flex;
@@ -33,15 +62,29 @@
       font-size: 8px;
       font-weight: 700;
 
+      @media screen and (max-width: 1200px) {
+        gap: 12em;
+        display: flex;
+        justify-content: center;
+      }
+
       .social_media {
         h1 {
           text-transform: uppercase;
+
+          @media screen and (max-width: 1200px) {
+            // font-size: 14px;
+          }
         }
       }
 
       .contact_phones {
         h1 {
           text-transform: uppercase;
+
+          @media screen and (max-width: 1200px) {
+            // font-size: 14px;
+          }
         }
         p {
           color: #000;
@@ -54,6 +97,10 @@
       .about_us {
         h1 {
           text-transform: uppercase;
+
+          @media screen and (max-width: 1200px) {
+            // font-size: 14px;
+          }
         }
         p {
           color: #000;

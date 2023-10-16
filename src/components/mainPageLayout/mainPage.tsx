@@ -72,7 +72,7 @@ const MainPage = () => {
               <img src={Carpet} alt="ковер" />
             </div>
           </div>
-          <div className={styles.eva}>
+          {/* <div className={styles.eva}>
             <h1>
               Что такое <code>EVA</code> коврики?
             </h1>
@@ -127,9 +127,9 @@ const MainPage = () => {
           </div>
         </div>
         <div className={styles.purple_line}>
-          <SimpleCarousel />
+          <SimpleCarousel /> */}
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );

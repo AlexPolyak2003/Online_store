@@ -3,8 +3,14 @@ import styles from "./head.module.scss";
 import phone from "../../icons/phone.svg";
 import location from "../../icons/location.svg";
 import instagram from "../../icons/Insta.svg";
+import ModalLog from "../modalLogin/modalLogin";
+import useLog from "../modalLogin/useLog";
+import useReg from "../modalReg/useReg";
+import ModalReg from "../modalReg/modalReg";
 
 const Head = () => {
+  const { isOpen, toggle } = useLog();
+  const { isOpen_1, toggle_1 } = useReg();
   return (
     <div className={styles.wrapper}>
       <div className={styles.content}>
@@ -21,11 +27,86 @@ const Head = () => {
             </div>
 
             <div className={styles.right_content}>
-              <div className={styles.login_position}>
-                <button className={styles.login}>Вход</button>
-              </div>
-              <div className={styles.registration_position}>
-                <button className={styles.registration}>Регистрация</button>
+              <div className={styles.auth}>
+                <div className={styles.login_position}>
+                  <button onClick={toggle} className={styles.login_btn}>
+                    Вход
+                  </button>
+                  <ModalLog isOpen={isOpen} toggle={toggle}>
+                    <div className={styles.log_auth}>
+                      <div className={styles.entrance}>
+                        <h3>Вход</h3>
+                      </div>
+
+                      <div className={styles.inputs}>
+                        <input
+                          className={styles.log_inp}
+                          placeholder="Логин"
+                          type="text"
+                        />
+                        <input
+                          className={styles.pass_inp}
+                          placeholder="Пароль"
+                          type="text"
+                        />
+                      </div>
+                      {/* <textarea
+                        className={styles.message}
+                        placeholder="Ваше сообщение (марка автомобиля, цвет ковриков, номер телефона)"
+                      ></textarea> */}
+
+                      <button className={styles.send_btn}>ОТПРАВИТЬ</button>
+                    </div>
+                  </ModalLog>
+                </div>
+                <div className={styles.registration_position}>
+                  <button
+                    onClick={toggle_1}
+                    className={styles.registration_btn}
+                  >
+                    Регистрация
+                  </button>
+
+                  <ModalReg isOpen={isOpen_1} toggle={toggle_1}>
+                    <div className={styles.register}>
+                      <h3>Регистрация</h3>
+
+                      <input
+                        className={styles.name}
+                        placeholder="Ваше имя"
+                        type="text"
+                      />
+
+                      <input
+                        className={styles.surname}
+                        placeholder="Ваша фамилия"
+                        type="text"
+                      />
+                      <input
+                        className={styles.email}
+                        placeholder="Ваш e-mail"
+                        type="text"
+                      />
+
+                      <input
+                        className={styles.log_inp}
+                        placeholder="Логин"
+                        type="text"
+                      />
+                      <input
+                        className={styles.pass_inp}
+                        placeholder="Пароль"
+                        type="text"
+                      />
+                      {/* <textarea
+                        className={styles.message}
+                        placeholder="Ваше сообщение (марка автомобиля, цвет ковриков, номер телефона)"
+                      ></textarea> */}
+
+                      <button className={styles.send_btn}>ОТПРАВИТЬ</button>
+                    </div>
+                  </ModalReg>
+                </div>
               </div>
 
               <div className={styles.visit_page}>

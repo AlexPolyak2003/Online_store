@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import styles from "./modal.module.scss";
+import styles from "./modalLogin.module.scss";
 import btn from "../../icons/close_button.png";
 
 interface ModalType {
@@ -8,7 +8,7 @@ interface ModalType {
   toggle: () => void;
 }
 
-export default function Modal(props: ModalType) {
+export default function ModalLog(props: ModalType) {
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation();
     props.toggle();

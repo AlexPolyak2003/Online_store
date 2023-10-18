@@ -166,7 +166,6 @@
 
           .btn {
             margin-right: 2em;
-            // margin: 10px;
             text-decoration: none;
             position: relative;
             font-size: 20px;
@@ -183,7 +182,6 @@
             font-family: "Roboto Condensed", Тahoma, sans-serif;
             background: linear-gradient(95deg, #b90160 2.23%, #2e3192 99.51%);
             cursor: pointer;
-            // border: 2px solid purple;
             border: none;
             outline: 1px solid;
             outline-color: purple;
@@ -212,10 +210,6 @@
             justify-content: center;
             align-items: center;
             gap: 1em;
-
-            // @media screen and (max-width: 776px) {
-            //   padding-top: 7em;
-            // }
 
             h3 {
               height: 30px;
@@ -257,26 +251,6 @@
                 width: 230px;
               }
             }
-
-            // .email {
-            //   width: 432px;
-            //   height: 41px;
-            //   flex-shrink: 0;
-            //   border-radius: 9px;
-            //   border: 1.5px solid #a1a1a1;
-            //   background: #fff;
-            //   font-size: 14px;
-            //   font-family: "Roboto-Medium";
-            //   padding-left: 1.2em;
-            //   color: #989898;
-            //   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-            //   @media screen and (max-width: 776px) {
-            //     width: 300px;
-            //   }
-            //    @media screen and (max-width: 450px) {
-            //     width: 230px;
-            //   }
-            // }
 
             .message {
               width: 450px;
@@ -436,15 +410,6 @@
           .differences_tablet,
           .color_tablet {
             display: none;
-
-            // @media screen and (max-width: 1200px) {
-            //   display: flex;
-            // }
-
-            // img {
-            //   width: 100%;
-            //   border-radius: 9px;
-            // }
           }
 
           .material,
@@ -489,9 +454,6 @@
       }
     }
     .purple_line {
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
       margin-top: 8em;
       padding-top: 8em;
 
